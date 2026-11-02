@@ -12,6 +12,8 @@
   $('#year').textContent = new Date().getFullYear();
 
   /* ---------- Reveal + active section ---------- */
+  // telefon/tablet: elementy pojawiają się pojedynczo, gdy wejdą w widok (bez przeskoków)
+  const touchMode = matchMedia('(max-width:959px), (hover:none)').matches;
   const ratios = new Map(sections.map(s => [s, 0]));
 
   function setActive() {
@@ -28,23 +30,30 @@
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => {
         ratios.set(e.target, e.intersectionRatio);
-        if (e.isIntersecting && e.intersectionRatio > 0.18) e.target.classList.add('in');
+        if (!touchMode && e.isIntersecting && e.intersectionRatio > 0.18) e.target.classList.add('in');
       });
       setActive();
-    }, { threshold: Array.from({ length: 21 }, (_, i) => i / 20) });
+    }, { threshold: Array.from({ length: 11 }, (_, i) => i / 10) });
     sections.forEach(s => io.observe(s));
+    if (touchMode) {
+      const rio = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+      $$('[data-reveal]').forEach(el => rio.observe(el));
+    }
   } else {
     sections.forEach(s => s.classList.add('in'));
+    $$('[data-reveal]').forEach(el => el.classList.add('in'));
   }
   // hero visible from the start
-  requestAnimationFrame(() => $('#hero').classList.add('in'));
+  requestAnimationFrame(() => { if (!touchMode) $('#hero').classList.add('in'); });
 
   /* ---------- Scroll progress ---------- */
   const bar = $('#progressBar');
   let ticking = false;
   const updateProgress = () => {
     const max = document.documentElement.scrollHeight - innerHeight;
-    bar.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, scrollY / max) : 0) + ')';
     ticking = false;
   };
   addEventListener('scroll', () => {
