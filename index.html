@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fizjoterapia dziecięca – Amelia Nitka</title>
+  <meta name="description" content="Fizjoterapia dziecięca – Amelia Nitka. Certyfikowana terapeutka NDT‑Bobath Baby. Wizyty domowe: Gmina Kosakowo, Gdynia, Rumia, Reda.">
+  <meta name="theme-color" content="#0f737a">
+  <meta property="og:title" content="Fizjoterapia dziecięca – Amelia Nitka">
+  <meta property="og:description" content="Rehabilitacja niemowląt i dzieci. Wizyty domowe w Gminie Kosakowo, Gdyni, Rumi i Redzie.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/first.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></g></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5Z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-8-4.6-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.4 12 20 12 20Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-6-6 6 6 6-6"/></symbol>
+</svg>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav-brand" aria-label="Fizjoterapia dziecięca – Amelia Nitka, strona główna">
+    <img src="img/logo.png" alt="" width="40" height="40">
+    <span>Amelia Nitka<small>Fizjoterapia dziecięca</small></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Główna nawigacja">
+    <a href="#hero" data-nav="hero">Strona główna</a>
+    <a href="#about" data-nav="about">O mnie</a>
+    <a href="#courses" data-nav="courses">Kursy i szkolenia</a>
+    <a href="#offer" data-nav="offer">Oferta</a>
+    <a href="#contact" data-nav="contact" class="nav-cta">Kontakt</a>
+    <div class="menu-foot">
+      <span>Zadzwoń lub napisz</span>
+      <a href="tel:+48605645067">605 645 067</a>
+      <a href="mailto:kontakt@fizjoterapia-dziecieca.pl">kontakt@fizjoterapia-dziecieca.pl</a>
+    </div>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<!-- SIDE DOTS -->
+<nav class="dots" id="dots" aria-label="Sekcje strony">
+  <a href="#hero" data-nav="hero" aria-label="Strona główna"><span>Start</span></a>
+  <a href="#about" data-nav="about" aria-label="O mnie"><span>O mnie</span></a>
+  <a href="#courses" data-nav="courses" aria-label="Kursy i szkolenia"><span>Kursy</span></a>
+  <a href="#offer" data-nav="offer" aria-label="Oferta"><span>Oferta</span></a>
+  <a href="#contact" data-nav="contact" aria-label="Kontakt"><span>Kontakt</span></a>
+</nav>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="panel hero" id="hero" data-section>
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-reveal style="--i:0"><svg class="ic"><use href="#i-home"/></svg> Wizyty domowe · Trójmiasto i okolice</p>
+      <h1 data-reveal style="--i:1">
+        <span class="h1-a">Fizjoterapia dziecięca</span>
+        <span class="h1-b">Amelia Nitka</span>
+      </h1>
+      <p class="lead" data-reveal style="--i:2">Jestem certyfikowaną terapeutką koncepcji NDT&#8209;Bobath&nbsp;Baby. Pracuję z&nbsp;niemowlętami i&nbsp;dziećmi, tworząc pozytywną atmosferę, w&nbsp;której terapia przebiega w&nbsp;komforcie dziecka i&nbsp;rodzica.</p>
+      <div class="hero-actions" data-reveal style="--i:3">
+        <a class="btn btn-primary" href="#contact">Umów wizytę <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+48605645067"><svg class="ic"><use href="#i-phone"/></svg> 605 645 067</a>
+      </div>
+    </div>
+
+    <div class="hero-art" data-reveal style="--i:2">
+      <div class="arch">
+        <div class="arch-ring"></div>
+        <picture>
+          <source srcset="img/me.webp" type="image/webp">
+          <img src="img/me.png" alt="Amelia Nitka – fizjoterapeutka dziecięca" width="800" height="919" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="float-card fc-1"><svg class="ic"><use href="#i-badge"/></svg><div><b>NDT&#8209;Bobath Baby</b><span>certyfikowana terapeutka</span></div></div>
+      <div class="float-card fc-2"><svg class="ic"><use href="#i-pin"/></svg><div><b>Kosakowo · Gdynia · Rumia · Reda</b><span>dojazd do pacjenta</span></div></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Przewiń w dół"><span>Przewiń</span><svg class="ic"><use href="#i-down"/></svg></a>
+</section>
+
+<!-- 2. O MNIE -->
+<section class="panel about" id="about" data-section>
+  <div class="wrap about-grid">
+    <div class="about-photo" data-reveal style="--i:0">
+      <picture>
+        <source srcset="img/first.webp" type="image/webp">
+        <img src="img/first.jpg" alt="Dłonie terapeutki delikatnie obejmujące stopki niemowlęcia" width="983" height="1228" loading="lazy">
+      </picture>
+      <div class="photo-badge"><img src="img/logo.png" alt="" width="64" height="64"></div>
+    </div>
+
+    <div class="about-copy">
+      <p class="kicker" data-reveal style="--i:0">O mnie</p>
+      <h2 data-reveal style="--i:1">Terapia w&nbsp;komforcie dziecka <em>i&nbsp;rodzica</em></h2>
+      <p data-reveal style="--i:2">Jestem certyfikowaną terapeutką koncepcji NDT&#8209;Bobath Baby.</p>
+      <p data-reveal style="--i:3">Ukończyłam studia licencjackie i&nbsp;magisterskie na kierunku "Fizjoterapia" w&nbsp;uczelni <i>Collegium Medicum</i> w&nbsp;Bydgoszczy oraz studia podyplomowe "Fizjoterapia w&nbsp;pediatrii" w&nbsp;<i>Wyższej Szkole Edukacji i&nbsp;Terapii</i> w&nbsp;Poznaniu.</p>
+      <p data-reveal style="--i:4">Na co dzień zajmuję się niemowlętami i&nbsp;dziećmi z&nbsp;zaburzeniami wieku rozwojowego (z&nbsp;uwzględnieniem zaburzeń neurologicznych oraz genetycznych). Pracuję również z&nbsp;pacjentami borykającymi się z&nbsp;wadami postawy. Staram się tworzyć pozytywną atmosferę, tak, aby terapia przebiegała w&nbsp;komforcie dziecka i&nbsp;rodzica.</p>
+      <div class="callout" data-reveal style="--i:5">
+        <svg class="ic"><use href="#i-pin"/></svg>
+        <p>Świadczę wizyty domowe na&nbsp;terenie Gminy Kosakowo, Gdyni (północne dzielnice), Rumi, Redy i&nbsp;innych pobliskich miejscowości.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. KURSY -->
+<section class="panel courses" id="courses" data-section>
+  <div class="wrap courses-grid">
+    <div class="courses-side">
+      <p class="kicker" data-reveal style="--i:0">Kursy i szkolenia</p>
+      <h2 data-reveal style="--i:1">Wiedza, która <em>procentuje</em> w&nbsp;terapii</h2>
+      <p class="courses-intro" data-reveal style="--i:2">Oprócz studiów ukończyłam też wiele specjalistycznych kursów:</p>
+      <div class="courses-photo" data-reveal style="--i:3">
+        <picture>
+          <source srcset="img/second.webp" type="image/webp">
+          <img src="img/second.jpg" alt="Niemowlę podczas masażu pleców – gimnastyka profilaktyczna" width="666" height="832" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <ol class="course-list">
+      <li data-reveal style="--i:1"><b>NDT-Bobath Baby</b></li>
+      <li data-reveal style="--i:2"><b>NDT-Bobath Basic</b></li>
+      <li data-reveal style="--i:3"><b>Trójpłaszczyznowa Terapia Wad Stóp u&nbsp;Dzieci</b> na Podstawach Neurofizjologicznych wg Zukunft-Huber</li>
+      <li data-reveal style="--i:4"><b>Osteopatyczne Zabiegi Lecznicze w&nbsp;Pediatrii</b></li>
+      <li data-reveal style="--i:5"><b>Tkanki miękkie w&nbsp;pediatrii i&nbsp;dynamiczne plastrowanie</b></li>
+      <li data-reveal style="--i:6"><b>Anatomy Trains in Structure &amp; Function</b></li>
+      <li data-reveal style="--i:7"><b>Proprioceptive Neuromuscular Facilitation</b> (PNF 1 &amp; PNF 2 – M. Knott Concept)</li>
+      <li data-reveal style="--i:8"><b>Masaż Shantala Special Care</b></li>
+      <li data-reveal style="--i:9"><b>Sensory Babies – Master Class Course</b> (kurs z&nbsp;zakresu integracji sensorycznej niemowląt)</li>
+      <li data-reveal style="--i:10"><b>Wspomaganie rozwoju dzieci ze specyficznymi problemami w nauce</b> (Program Interwencyjny Sally Goddard Blythe oparty o&nbsp;integrację odruchów oraz ocenę neuromotorycznej gotowości do nauki <b>INPP</b>)</li>
+      <li data-reveal style="--i:11"><b>Ruch Rozwijający wg Weroniki Sherborne</b></li>
+      <li data-reveal style="--i:12"><b>Ocena Neurorozwojowa Dziecka i&nbsp;Przykłady Postępowania Fizjoterapeutycznego</b></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4. OFERTA -->
+<section class="panel offer" id="offer" data-section>
+  <div class="wrap offer-grid">
+    <div class="offer-photo" data-reveal style="--i:0">
+      <picture>
+        <source srcset="img/third.webp" type="image/webp">
+        <img src="img/third.jpg" alt="Małe dziecko raczkujące na macie podczas terapii" width="517" height="646" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="offer-main">
+      <p class="kicker" data-reveal style="--i:0">Oferta</p>
+      <h2 data-reveal style="--i:1">Zakres oferowanych <em>usług</em></h2>
+
+      <ul class="services" data-reveal style="--i:2">
+        <li>Rehabilitacja niemowląt</li>
+        <li>Rehabilitacja neurologiczna dzieci</li>
+        <li>Rehabilitacja wad postawy</li>
+        <li>Terapia wad stóp</li>
+        <li>Masaż Shantala</li>
+        <li>Instruktaż pielęgnacyjny</li>
+        <li>Kinesiotaping</li>
+        <li>Opinia fizjoterapeutyczna</li>
+      </ul>
+
+      <h3 data-reveal style="--i:3">Zapraszam na konsultację rehabilitacyjną dzieci z:</h3>
+      <ul class="pills" data-reveal style="--i:4">
+        <li>Problemami z&nbsp;dystrybucją napięcia mięśniowego</li>
+        <li>Asymetrią ułożeniową</li>
+        <li>Kręczem szyi</li>
+        <li>Dysplazją stawów biodrowych</li>
+        <li>Problemami pielęgnacyjnymi</li>
+        <li>Mózgowym porażeniem dziecięcym</li>
+        <li>Chorobami genetycznymi</li>
+        <li>Chorobami metabolicznymi</li>
+        <li>Porodem przedwczesnym</li>
+        <li>Wadami stóp</li>
+        <li>Wadami postawy</li>
+      </ul>
+
+      <div class="price" data-reveal style="--i:5">
+        <div class="price-num"><small>od</small>150 zł</div>
+        <p>Cena wizyty domowej uzależniona jest od czasu dojazdu do pacjenta i&nbsp;zaczyna się od 150&nbsp;zł.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. KONTAKT + STOPKA -->
+<section class="panel contact" id="contact" data-section>
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="kicker" data-reveal style="--i:0">Kontakt</p>
+      <h2 data-reveal style="--i:1">Porozmawiajmy o&nbsp;Twoim <em>dziecku</em></h2>
+      <ul class="info-list">
+        <li data-reveal style="--i:2"><a href="tel:+48605645067"><span class="ico"><svg class="ic"><use href="#i-phone"/></svg></span><span>605 645 067</span></a></li>
+        <li data-reveal style="--i:3"><a href="mailto:kontakt@fizjoterapia-dziecieca.pl"><span class="ico"><svg class="ic"><use href="#i-mail"/></svg></span><span>kontakt@fizjoterapia-dziecieca.pl</span></a></li>
+        <li data-reveal style="--i:4"><a href="https://www.google.com/maps/search/?api=1&amp;query=ul.+Sezamkowa+34%2F2%2C+D%C4%99bog%C3%B3rze" target="_blank" rel="noopener"><span class="ico"><svg class="ic"><use href="#i-pin"/></svg></span><span>ul. Sezamkowa 34/2, Dębogórze</span></a></li>
+      </ul>
+    </div>
+
+    <div class="form-card" data-reveal style="--i:2">
+      <h3>Masz pytania?</h3>
+      <p class="form-sub">Możesz skorzystać z poniższego formularza</p>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="user_name" name="user_name" placeholder=" " autocomplete="name" maxlength="255">
+          <label for="user_name">Imię</label>
+          <small class="err" data-for="user_name"></small>
+        </div>
+        <div class="field">
+          <input type="email" id="user_email" name="user_email" placeholder=" " autocomplete="email" maxlength="255">
+          <label for="user_email">Adres e-mail</label>
+          <small class="err" data-for="user_email"></small>
+        </div>
+        <div class="field">
+          <input type="text" id="subject" name="subject" placeholder=" " maxlength="255">
+          <label for="subject">Temat wiadomości</label>
+          <small class="err" data-for="subject"></small>
+        </div>
+        <div class="field">
+          <textarea id="message" name="message" rows="3" placeholder=" " maxlength="4000"></textarea>
+          <label for="message">Wiadomość</label>
+          <small class="err" data-for="message"></small>
+        </div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="agree">
+          <input type="checkbox" id="agree" name="agree">
+          <label for="agree">Potwierdzam zapoznanie się z&nbsp;<a target="_blank" rel="noopener" href="polityka_prywatnosci.pdf">polityką prywatności</a></label>
+          <small class="err" data-for="agree"></small>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn"><span>Wyślij</span><svg class="ic"><use href="#i-arrow"/></svg></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>FIZJOTERAPIA DZIECIĘCA – AMELIA NITKA © <span id="year">2026</span></p>
+    <nav aria-label="Stopka">
+      <a href="#hero">Strona główna</a>
+      <a href="#about">O mnie</a>
+      <a href="#courses">Kursy i szkolenia</a>
+      <a href="#offer">Oferta</a>
+      <a href="#contact">Kontakt</a>
+      <a href="polityka_prywatnosci.pdf" target="_blank" rel="noopener">Polityka prywatności</a>
+    </nav>
+  </footer>
+</section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
